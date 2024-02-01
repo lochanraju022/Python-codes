@@ -1,0 +1,12 @@
+# num=int(input('Enter the number of items :'))
+list1=[10,15,4,23,0]
+# for number in range(num):
+#     a=int(input('enter number to list:'))
+#     list1.append(a)
+print('list before insertion sort is {}'.format(list1))
+
+for i in range(len(list1)-1):
+    for j in range(len(list1)-1-i):
+        if list1[j]>list1[j+1]:
+            list1[j], list1[j + 1] = list1[j + 1], list1[j]
+print('After sorting the list is {}'.format(list1))
