@@ -1,0 +1,6 @@
+str1 = "ABFCACDB"
+while 'AB' in str1 or 'CD' in str1:  # Proper condition
+    str1=str1.replace('AB', "")  # Update the string after replacing
+    str1=str1.replace('CD', "")  # Update after removing 'CD'
+
+print(len(str1))  # Output: 2 (for the input "ABFCACDB")
